@@ -1,0 +1,267 @@
+[2020-09-14 11:53:48.001][info][main:15]: Lua Lsp startup, root: 	C:/Users/alihs/AppData/Roaming/Sublime Text/Packages/LSP-luau
+[2020-09-14 11:53:48.072][debug][main:16]: ROOT:	C:/Users/alihs/AppData/Roaming/Sublime Text/Packages/LSP-luau
+[2020-09-14 11:53:48.072][debug]: cannot open C:\Users\alihs\AppData\Roaming\Sublime Text\Packages/LSP-luau/debugger.lua: No such file or directory
+[2020-09-14 11:53:48.211][info][script.language:125]: VSC language: en-us
+[2020-09-14 11:53:48.211][info][script.language:126]: LS  language: en-us
+[2020-09-14 11:53:49.332][debug][script.async.async:55]: Create thread, id: 	1	task: 	proto
+[2020-09-14 11:53:49.369][debug][script.service:886]: collectgarbage: 	0.037
+[2020-09-14 11:53:49.369][debug][script.service:957]: 
+State
+Main Mem:  [21165.232]kb
+#001 Mem:  <Unknown>
+-------------------
+CachedVM:  [0]
+AlivedVM:  [0]
+DeadVM:    [0]
+-------------------
+CachedSrc: [0]
+AlivedSrc: [1]
+DeadSrc:   [0]
+-------------------
+CachedFunc:[0]
+AlivedFunc:[0]
+DeadFunc:  [0]
+-------------------
+TotalVal:  [0]
+DeadVal:   [0]
+-------------------
+TotalLoc:  [0]
+TotalEmmy: [458]
+
+[2020-09-14 11:53:49.370][debug][script.service:999]: test memory: 	0.000
+[2020-09-14 11:53:49.383][info][script.method.initialize:22]: {
+	capabilities = {
+		textDocument = {
+			codeAction = {
+				codeActionLiteralSupport = {
+					codeActionKind = {
+						valueSet = {
+							[1] = "quickfix",
+							[2] = "refactor",
+							[3] = "refactor.extract",
+							[4] = "refactor.inline",
+							[5] = "refactor.rewrite",
+							[6] = "source.organizeImports",
+						},
+					},
+				},
+				dynamicRegistration = true,
+			},
+			colorProvider = {
+				dynamicRegistration = true,
+			},
+			completion = {
+				completionItem = {
+					deprecatedSupport = true,
+					documentationFormat = {
+						[1] = "markdown",
+						[2] = "plaintext",
+					},
+					snippetSupport = true,
+					tagSupport = {
+						valueSet = {
+							[1] = 1,
+						},
+					},
+				},
+				completionItemKind = {
+					valueSet = {
+						[01] = 1,
+						[02] = 2,
+						[03] = 3,
+						[04] = 4,
+						[05] = 5,
+						[06] = 6,
+						[07] = 7,
+						[08] = 8,
+						[09] = 9,
+						[10] = 10,
+						[11] = 11,
+						[12] = 12,
+						[13] = 13,
+						[14] = 14,
+						[15] = 15,
+						[16] = 16,
+						[17] = 17,
+						[18] = 18,
+						[19] = 19,
+						[20] = 20,
+						[21] = 21,
+						[22] = 22,
+						[23] = 23,
+						[24] = 24,
+						[25] = 25,
+					},
+				},
+				dynamicRegistration = true,
+			},
+			declaration = {
+				dynamicRegistration = true,
+				linkSupport = true,
+			},
+			definition = {
+				dynamicRegistration = true,
+				linkSupport = true,
+			},
+			documentHighlight = {
+				dynamicRegistration = true,
+			},
+			documentSymbol = {
+				["hierarchicalDocumentSymbolSupport"] = true,
+				dynamicRegistration = true,
+				symbolKind = {
+					valueSet = {
+						[01] = 1,
+						[02] = 2,
+						[03] = 3,
+						[04] = 4,
+						[05] = 5,
+						[06] = 6,
+						[07] = 7,
+						[08] = 8,
+						[09] = 9,
+						[10] = 10,
+						[11] = 11,
+						[12] = 12,
+						[13] = 13,
+						[14] = 14,
+						[15] = 15,
+						[16] = 16,
+						[17] = 17,
+						[18] = 18,
+						[19] = 19,
+						[20] = 20,
+						[21] = 21,
+						[22] = 22,
+						[23] = 23,
+						[24] = 24,
+						[25] = 25,
+						[26] = 26,
+					},
+				},
+			},
+			formatting = {
+				dynamicRegistration = true,
+			},
+			hover = {
+				contentFormat = {
+					[1] = "markdown",
+					[2] = "plaintext",
+				},
+				dynamicRegistration = true,
+			},
+			implementation = {
+				dynamicRegistration = true,
+				linkSupport = true,
+			},
+			publishDiagnostics = {
+				relatedInformation = true,
+			},
+			rangeFormatting = {
+				dynamicRegistration = true,
+			},
+			references = {
+				dynamicRegistration = true,
+			},
+			rename = {
+				dynamicRegistration = true,
+				prepareSupport = true,
+			},
+			selectionRange = {
+				dynamicRegistration = true,
+			},
+			signatureHelp = {
+				dynamicRegistration = true,
+				signatureInformation = {
+					documentationFormat = {
+						[1] = "markdown",
+						[2] = "plaintext",
+					},
+					parameterInformation = {
+						labelOffsetSupport = true,
+					},
+				},
+			},
+			synchronization = {
+				didSave = true,
+				dynamicRegistration = true,
+				willSave = true,
+				willSaveWaitUntil = true,
+			},
+			typeDefinition = {
+				dynamicRegistration = true,
+				linkSupport = true,
+			},
+		},
+		window = {
+			workDoneProgress = true,
+		},
+		workspace = {
+			applyEdit = true,
+			configuration = true,
+			didChangeConfiguration = {
+				dynamicRegistration = true,
+			},
+			executeCommand = {
+			},
+			symbol = {
+				dynamicRegistration = true,
+				symbolKind = {
+					valueSet = {
+						[01] = 1,
+						[02] = 2,
+						[03] = 3,
+						[04] = 4,
+						[05] = 5,
+						[06] = 6,
+						[07] = 7,
+						[08] = 8,
+						[09] = 9,
+						[10] = 10,
+						[11] = 11,
+						[12] = 12,
+						[13] = 13,
+						[14] = 14,
+						[15] = 15,
+						[16] = 16,
+						[17] = 17,
+						[18] = 18,
+						[19] = 19,
+						[20] = 20,
+						[21] = 21,
+						[22] = 22,
+						[23] = 23,
+						[24] = 24,
+						[25] = 25,
+						[26] = 26,
+					},
+				},
+			},
+			workspaceEdit = {
+				documentChanges = true,
+				failureHandling = "abort",
+			},
+			workspaceFolders = true,
+		},
+	},
+	clientInfo = {
+		name = "Sublime Text LSP",
+		version = "1.0.12",
+	},
+	initializationOptions = {
+	},
+	processId = 4160,
+	rootPath = "C:\\Users\\alihs\\AppData\\Roaming\\Sublime Text\\Packages\\LSP-luau",
+	rootUri = "file:///C:/Users/alihs/AppData/Roaming/Sublime%20Text/Packages/LSP-luau",
+	workspaceFolders = {
+		[1] = {
+			name = "LSP-luau",
+			uri = "file:///C:/Users/alihs/AppData/Roaming/Sublime%20Text/Packages/LSP-luau",
+		},
+	},
+}
+[2020-09-14 11:53:49.384][info][script.service:181]: Add workspace	LSP-luau	file:///C:/Users/alihs/AppData/Roaming/Sublime%20Text/Packages/LSP-luau
+[2020-09-14 11:53:49.384][debug][script.async.async:55]: Create thread, id: 	2	task: 	loadfile
+[2020-09-14 11:53:49.385][info][script.workspace:145]: Workspace inited, root: 	c:/Users/alihs/AppData/Roaming/Sublime Text/Packages/LSP-luau
+[2020-09-14 11:53:49.385][info][script.workspace:146]: Workspace inited, uri: 	file:///C:/Users/alihs/AppData/Roaming/Sublime%20Text/Packages/LSP-luau
+[2020-09-14 11:53:49.385][info][script.workspace:148]: Log path: 	C:/Users/alihs/AppData/Roaming/Sublime Text/Packages/LSP-luau/log/file_C_Users_alihs_AppData_Roaming_Sublime%20Text_Packages_LSP-luau.log

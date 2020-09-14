@@ -1,0 +1,10 @@
+[
+    {
+        "caption": "Preferences: LSP-luau Settings",
+        "command": "edit_settings",
+        "args": {
+            "base_file": "${packages}/LSP-luau/LSP-luau.sublime-settings",
+            "default": "// Settings in here override those in \"LSP-luau/LSP-luau.sublime-settings\"\n{\n\t$0\n}\n"
+        }
+    }
+]

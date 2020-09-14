@@ -1,0 +1,534 @@
+[2020-09-14 11:53:48.001][info][main:15]: Lua Lsp startup, root: 	C:/Users/alihs/AppData/Roaming/Sublime Text/Packages/LSP-luau
+[2020-09-14 11:53:48.072][debug][main:16]: ROOT:	C:/Users/alihs/AppData/Roaming/Sublime Text/Packages/LSP-luau
+[2020-09-14 11:53:48.072][debug]: cannot open C:\Users\alihs\AppData\Roaming\Sublime Text\Packages/LSP-luau/debugger.lua: No such file or directory
+[2020-09-14 11:53:48.211][info][script.language:125]: VSC language: en-us
+[2020-09-14 11:53:48.211][info][script.language:126]: LS  language: en-us
+[2020-09-14 11:53:49.332][debug][script.async.async:55]: Create thread, id: 	1	task: 	proto
+[2020-09-14 11:53:49.369][debug][script.service:886]: collectgarbage: 	0.037
+[2020-09-14 11:53:49.369][debug][script.service:957]: 
+State
+Main Mem:  [21165.232]kb
+#001 Mem:  <Unknown>
+-------------------
+CachedVM:  [0]
+AlivedVM:  [0]
+DeadVM:    [0]
+-------------------
+CachedSrc: [0]
+AlivedSrc: [1]
+DeadSrc:   [0]
+-------------------
+CachedFunc:[0]
+AlivedFunc:[0]
+DeadFunc:  [0]
+-------------------
+TotalVal:  [0]
+DeadVal:   [0]
+-------------------
+TotalLoc:  [0]
+TotalEmmy: [458]
+
+[2020-09-14 11:53:49.370][debug][script.service:999]: test memory: 	0.000
+[2020-09-14 11:53:49.383][info][script.method.initialize:22]: {
+	capabilities = {
+		textDocument = {
+			codeAction = {
+				codeActionLiteralSupport = {
+					codeActionKind = {
+						valueSet = {
+							[1] = "quickfix",
+							[2] = "refactor",
+							[3] = "refactor.extract",
+							[4] = "refactor.inline",
+							[5] = "refactor.rewrite",
+							[6] = "source.organizeImports",
+						},
+					},
+				},
+				dynamicRegistration = true,
+			},
+			colorProvider = {
+				dynamicRegistration = true,
+			},
+			completion = {
+				completionItem = {
+					deprecatedSupport = true,
+					documentationFormat = {
+						[1] = "markdown",
+						[2] = "plaintext",
+					},
+					snippetSupport = true,
+					tagSupport = {
+						valueSet = {
+							[1] = 1,
+						},
+					},
+				},
+				completionItemKind = {
+					valueSet = {
+						[01] = 1,
+						[02] = 2,
+						[03] = 3,
+						[04] = 4,
+						[05] = 5,
+						[06] = 6,
+						[07] = 7,
+						[08] = 8,
+						[09] = 9,
+						[10] = 10,
+						[11] = 11,
+						[12] = 12,
+						[13] = 13,
+						[14] = 14,
+						[15] = 15,
+						[16] = 16,
+						[17] = 17,
+						[18] = 18,
+						[19] = 19,
+						[20] = 20,
+						[21] = 21,
+						[22] = 22,
+						[23] = 23,
+						[24] = 24,
+						[25] = 25,
+					},
+				},
+				dynamicRegistration = true,
+			},
+			declaration = {
+				dynamicRegistration = true,
+				linkSupport = true,
+			},
+			definition = {
+				dynamicRegistration = true,
+				linkSupport = true,
+			},
+			documentHighlight = {
+				dynamicRegistration = true,
+			},
+			documentSymbol = {
+				["hierarchicalDocumentSymbolSupport"] = true,
+				dynamicRegistration = true,
+				symbolKind = {
+					valueSet = {
+						[01] = 1,
+						[02] = 2,
+						[03] = 3,
+						[04] = 4,
+						[05] = 5,
+						[06] = 6,
+						[07] = 7,
+						[08] = 8,
+						[09] = 9,
+						[10] = 10,
+						[11] = 11,
+						[12] = 12,
+						[13] = 13,
+						[14] = 14,
+						[15] = 15,
+						[16] = 16,
+						[17] = 17,
+						[18] = 18,
+						[19] = 19,
+						[20] = 20,
+						[21] = 21,
+						[22] = 22,
+						[23] = 23,
+						[24] = 24,
+						[25] = 25,
+						[26] = 26,
+					},
+				},
+			},
+			formatting = {
+				dynamicRegistration = true,
+			},
+			hover = {
+				contentFormat = {
+					[1] = "markdown",
+					[2] = "plaintext",
+				},
+				dynamicRegistration = true,
+			},
+			implementation = {
+				dynamicRegistration = true,
+				linkSupport = true,
+			},
+			publishDiagnostics = {
+				relatedInformation = true,
+			},
+			rangeFormatting = {
+				dynamicRegistration = true,
+			},
+			references = {
+				dynamicRegistration = true,
+			},
+			rename = {
+				dynamicRegistration = true,
+				prepareSupport = true,
+			},
+			selectionRange = {
+				dynamicRegistration = true,
+			},
+			signatureHelp = {
+				dynamicRegistration = true,
+				signatureInformation = {
+					documentationFormat = {
+						[1] = "markdown",
+						[2] = "plaintext",
+					},
+					parameterInformation = {
+						labelOffsetSupport = true,
+					},
+				},
+			},
+			synchronization = {
+				didSave = true,
+				dynamicRegistration = true,
+				willSave = true,
+				willSaveWaitUntil = true,
+			},
+			typeDefinition = {
+				dynamicRegistration = true,
+				linkSupport = true,
+			},
+		},
+		window = {
+			workDoneProgress = true,
+		},
+		workspace = {
+			applyEdit = true,
+			configuration = true,
+			didChangeConfiguration = {
+				dynamicRegistration = true,
+			},
+			executeCommand = {
+			},
+			symbol = {
+				dynamicRegistration = true,
+				symbolKind = {
+					valueSet = {
+						[01] = 1,
+						[02] = 2,
+						[03] = 3,
+						[04] = 4,
+						[05] = 5,
+						[06] = 6,
+						[07] = 7,
+						[08] = 8,
+						[09] = 9,
+						[10] = 10,
+						[11] = 11,
+						[12] = 12,
+						[13] = 13,
+						[14] = 14,
+						[15] = 15,
+						[16] = 16,
+						[17] = 17,
+						[18] = 18,
+						[19] = 19,
+						[20] = 20,
+						[21] = 21,
+						[22] = 22,
+						[23] = 23,
+						[24] = 24,
+						[25] = 25,
+						[26] = 26,
+					},
+				},
+			},
+			workspaceEdit = {
+				documentChanges = true,
+				failureHandling = "abort",
+			},
+			workspaceFolders = true,
+		},
+	},
+	clientInfo = {
+		name = "Sublime Text LSP",
+		version = "1.0.12",
+	},
+	initializationOptions = {
+	},
+	processId = 4160,
+	rootPath = "C:\\Users\\alihs\\AppData\\Roaming\\Sublime Text\\Packages\\LSP-luau",
+	rootUri = "file:///C:/Users/alihs/AppData/Roaming/Sublime%20Text/Packages/LSP-luau",
+	workspaceFolders = {
+		[1] = {
+			name = "LSP-luau",
+			uri = "file:///C:/Users/alihs/AppData/Roaming/Sublime%20Text/Packages/LSP-luau",
+		},
+	},
+}
+[2020-09-14 11:53:49.384][info][script.service:181]: Add workspace	LSP-luau	file:///C:/Users/alihs/AppData/Roaming/Sublime%20Text/Packages/LSP-luau
+[2020-09-14 11:53:49.384][debug][script.async.async:55]: Create thread, id: 	2	task: 	loadfile
+[2020-09-14 11:53:49.385][info][script.workspace:145]: Workspace inited, root: 	c:/Users/alihs/AppData/Roaming/Sublime Text/Packages/LSP-luau
+[2020-09-14 11:53:49.385][info][script.workspace:146]: Workspace inited, uri: 	file:///C:/Users/alihs/AppData/Roaming/Sublime%20Text/Packages/LSP-luau
+[2020-09-14 11:53:49.385][info][script.workspace:148]: Log path: 	C:/Users/alihs/AppData/Roaming/Sublime Text/Packages/LSP-luau/log/file_C_Users_alihs_AppData_Roaming_Sublime%20Text_Packages_LSP-luau.log
+[2020-09-14 11:53:49.454][debug][script.config:209]: Config update: 	{
+	color = {
+		mode = "Semantic",
+	},
+	completion = {
+		callSnippet = "Disable",
+		displayContext = 6,
+		enable = true,
+		fastAutocompletion = false,
+		keywordSnippet = "Replace",
+	},
+	diagnostics = {
+		datamodelAsIgnore = true,
+		disable = {
+		},
+		enable = true,
+		globals = {
+		},
+		ignore = {
+		},
+		severity = {
+			["ambiguity-1"] = "Warning",
+			["deprecated-rbx-member"] = "Information",
+			["duplicate-index"] = "Warning",
+			["duplicate-method"] = "Warning",
+			["emmy-lua"] = "Warning",
+			["empty-block"] = "Hint",
+			["global-in-nil-env"] = "Warning",
+			["incorrect-call-arguments"] = "Warning",
+			["invalid-rbx-classname"] = "Warning",
+			["lowercase-global"] = "Information",
+			["newfield-call"] = "Warning",
+			["newline-call"] = "Information",
+			["redefined-local"] = "Information",
+			["redundant-parameter"] = "Information",
+			["redundant-value"] = "Warning",
+			["set-const"] = "Error",
+			["set-for-state"] = "Warning",
+			["trailing-space"] = "Hint",
+			["undefined-env-child"] = "Information",
+			["undefined-global"] = "Warning",
+			["undefined-rbx-member"] = "Warning",
+			["unknown-symbol"] = "Warning",
+			["unused-function"] = "Hint",
+			["unused-label"] = "Hint",
+			["unused-local"] = "Hint",
+			["unused-vararg"] = "Hint",
+		},
+		syntax = true,
+	},
+	hover = {
+		enable = true,
+		viewNumber = true,
+		viewString = true,
+		viewStringMax = 1000,
+	},
+	plugin = {
+		enable = false,
+		path = ".vscode/lua-plugin/*.lua",
+	},
+	runtime = {
+		library = {
+		},
+		path = {
+			[1] = "?.lua",
+			[2] = "?/init.lua",
+			[3] = "?/?.lua",
+		},
+		version = "Luau",
+	},
+	signatureHelp = {
+		enable = true,
+	},
+	workspace = {
+		ignoreDir = {
+			[".vscode"] = true,
+		},
+		ignoreSubmodules = true,
+		library = {
+		},
+		loadMode = "All Files",
+		maxPreload = 300,
+		preloadFileSize = 100,
+		rojoProjectFile = "default",
+		useGitIgnore = true,
+	},
+}	{
+	associations = {
+	},
+	exclude = {
+	},
+}
+[2020-09-14 11:53:49.455][debug][script.capability.completion:27]: Enable completion.
+[2020-09-14 11:53:49.455][debug][script.service:828]: reScanFiles
+[2020-09-14 11:53:49.456][debug][script.async.async:55]: Create thread, id: 	3	task: 	scanfiles
+[2020-09-14 11:53:49.457][debug][script.config:209]: Config update: 	{
+	color = {
+		mode = "Semantic",
+	},
+	completion = {
+		callSnippet = "Disable",
+		displayContext = 6,
+		enable = true,
+		fastAutocompletion = false,
+		keywordSnippet = "Replace",
+	},
+	diagnostics = {
+		datamodelAsIgnore = true,
+		disable = {
+		},
+		enable = true,
+		globals = {
+		},
+		ignore = {
+		},
+		severity = {
+			["ambiguity-1"] = "Warning",
+			["deprecated-rbx-member"] = "Information",
+			["duplicate-index"] = "Warning",
+			["duplicate-method"] = "Warning",
+			["emmy-lua"] = "Warning",
+			["empty-block"] = "Hint",
+			["global-in-nil-env"] = "Warning",
+			["incorrect-call-arguments"] = "Warning",
+			["invalid-rbx-classname"] = "Warning",
+			["lowercase-global"] = "Information",
+			["newfield-call"] = "Warning",
+			["newline-call"] = "Information",
+			["redefined-local"] = "Information",
+			["redundant-parameter"] = "Information",
+			["redundant-value"] = "Warning",
+			["set-const"] = "Error",
+			["set-for-state"] = "Warning",
+			["trailing-space"] = "Hint",
+			["undefined-env-child"] = "Information",
+			["undefined-global"] = "Warning",
+			["undefined-rbx-member"] = "Warning",
+			["unknown-symbol"] = "Warning",
+			["unused-function"] = "Hint",
+			["unused-label"] = "Hint",
+			["unused-local"] = "Hint",
+			["unused-vararg"] = "Hint",
+		},
+		syntax = true,
+	},
+	hover = {
+		enable = true,
+		viewNumber = true,
+		viewString = true,
+		viewStringMax = 1000,
+	},
+	plugin = {
+		enable = false,
+		path = ".vscode/lua-plugin/*.lua",
+	},
+	runtime = {
+		library = {
+		},
+		path = {
+			[1] = "?.lua",
+			[2] = "?/init.lua",
+			[3] = "?/?.lua",
+		},
+		version = "Luau",
+	},
+	signatureHelp = {
+		enable = true,
+	},
+	workspace = {
+		ignoreDir = {
+			[".vscode"] = true,
+		},
+		ignoreSubmodules = true,
+		library = {
+		},
+		loadMode = "All Files",
+		maxPreload = 300,
+		preloadFileSize = 100,
+		rojoProjectFile = "default",
+		useGitIgnore = true,
+	},
+}	{
+	associations = {
+	},
+	exclude = {
+	},
+}
+[2020-09-14 11:53:49.458][debug][script.service:125]: clearDiagnostics	file:///C:/Users/alihs/AppData/Roaming/Sublime%20Text/Packages/LSP-luau/main.lua
+[2020-09-14 11:53:49.586][debug][script.method.initialized:77]: client/registerCapability Success!
+[2020-09-14 11:53:49.586][debug][script.workspace:117]: Scanning:	c:/Users/alihs/AppData/Roaming/Sublime Text/Packages/LSP-luau
+[2020-09-14 11:53:49.586][debug][script.workspace:117]: Scan pattern:	{
+	[1] = ".vscode",
+}
+[2020-09-14 11:53:49.586][debug][script.workspace:117]: Scan options:	{
+	ignoreCase = true,
+}
+[2020-09-14 11:53:49.892][debug][script.service:65]: Task [textDocument/publishDiagnostics] takes [0.304]sec.
+[2020-09-14 11:53:50.080][info][script.workspace:111]: Scan finish, got	141	files.
+[2020-09-14 11:53:50.084][debug][script.service:413]: reCompile:	142	142
+[2020-09-14 11:53:50.121][debug][script.service:886]: collectgarbage: 	0.037
+[2020-09-14 11:53:50.122][debug][script.service:957]: 
+State
+Main Mem:  [22522.342]kb
+#001 Mem:  [63.767]kb
+#002 Mem:  <Unknown>
+#003 Mem:  <Unknown>
+-------------------
+CachedVM:  [0]
+AlivedVM:  [0]
+DeadVM:    [0]
+-------------------
+CachedSrc: [0]
+AlivedSrc: [1]
+DeadSrc:   [1]
+-------------------
+CachedFunc:[0]
+AlivedFunc:[0]
+DeadFunc:  [0]
+-------------------
+TotalVal:  [426]
+DeadVal:   [426]
+-------------------
+TotalLoc:  [0]
+TotalEmmy: [458]
+
+[2020-09-14 11:53:50.122][debug][script.service:999]: test memory: 	0.001
+[2020-09-14 11:53:50.122][debug][script.service:125]: clearDiagnostics	file:///C:/Users/alihs/AppData/Roaming/Sublime%20Text/Packages/LSP-luau/main.lua
+[2020-09-14 11:53:50.364][debug][script.service:598]: Compile VM[file:///c%3A/Users/alihs/AppData/Roaming/Sublime%20Text/Packages/LSP-luau/script/vm/vm.lua] takes: 0.204 sec
+[2020-09-14 11:53:56.036][debug][script.service:598]: Compile VM[file:///c%3A/Users/alihs/AppData/Roaming/Sublime%20Text/Packages/LSP-luau/script/parser/ast.lua] takes: 0.293 sec
+[2020-09-14 11:54:00.414][debug][script.service:598]: Compile VM[file:///c%3A/Users/alihs/AppData/Roaming/Sublime%20Text/Packages/LSP-luau/script/capability/semantic.lua] takes: 3.331 sec
+[2020-09-14 11:54:01.849][warn][script.service:560]: Compile Ast[file:///c%3A/Users/alihs/AppData/Roaming/Sublime%20Text/Packages/LSP-luau/script/core/diagnostics.lua] takes [0.112] sec, size [45.061]kb
+[2020-09-14 11:54:03.124][debug][script.service:598]: Compile VM[file:///c%3A/Users/alihs/AppData/Roaming/Sublime%20Text/Packages/LSP-luau/script/core/completion.lua] takes: 0.206 sec
+[2020-09-14 11:54:03.604][debug][script.service:598]: Compile VM[file:///c%3A/Users/alihs/AppData/Roaming/Sublime%20Text/Packages/LSP-luau/script/core/diagnostics.lua] takes: 0.228 sec
+[2020-09-14 11:54:08.201][debug][script.service:598]: Compile VM[file:///c%3A/Users/alihs/AppData/Roaming/Sublime%20Text/Packages/LSP-luau/script/vm/vm.lua] takes: 0.260 sec
+[2020-09-14 11:54:08.900][error][script.vm.value:416]: ...aming/Sublime Text/Packages/LSP-luau/script/vm\value.lua:416: bad argument #1 to 'for iterator' (table expected, got nil)
+stack traceback:
+	...aming/Sublime Text/Packages/LSP-luau/script/vm\value.lua:416: in method 'mergeInfo'
+	...aming/Sublime Text/Packages/LSP-luau/script/vm\value.lua:444: in method 'mergeValue'
+	...aming/Sublime Text/Packages/LSP-luau/script/vm\value.lua:666: in upvalue 'callback'
+	.../Sublime Text/Packages/LSP-luau/script/emmy\typeUnit.lua:23: in local 'callback'
+	...g/Sublime Text/Packages/LSP-luau/script/emmy\manager.lua:51: in function <...g/Sublime Text/Packages/LSP-luau/script/emmy\manager.lua:43>
+	(...tail calls...)
+	.../Sublime Text/Packages/LSP-luau/script/emmy\typeUnit.lua:21: in method 'getClass'
+	...ming/Sublime Text/Packages/LSP-luau/script/emmy\type.lua:36: in method 'eachClass'
+	...aming/Sublime Text/Packages/LSP-luau/script/vm\value.lua:664: in method 'setEmmy'
+	...aming/Sublime Text/Packages/LSP-luau/script/vm\local.lua:155: in method 'setEmmy'
+	.../Roaming/Sublime Text/Packages/LSP-luau/script/vm\vm.lua:1319: in function 'vm.manager.createLocal'
+	...	(skipping 5 levels)
+	.../Roaming/Sublime Text/Packages/LSP-luau/script/vm\vm.lua:1179: in function 'vm.manager.doAction'
+	.../Roaming/Sublime Text/Packages/LSP-luau/script/vm\vm.lua:1201: in function 'vm.manager.doActions'
+	.../Roaming/Sublime Text/Packages/LSP-luau/script/vm\vm.lua:142: in function 'vm.manager.runFunction'
+	.../Roaming/Sublime Text/Packages/LSP-luau/script/vm\vm.lua:1221: in function 'vm.manager.callLeftFuncions'
+	.../Roaming/Sublime Text/Packages/LSP-luau/script/vm\vm.lua:1413: in function <.../Roaming/Sublime Text/Packages/LSP-luau/script/vm\vm.lua:1400>
+	[C]: in function 'xpcall'
+	.../Roaming/Sublime Text/Packages/LSP-luau/script/vm\vm.lua:1434: in function 'vm'
+	...oaming/Sublime Text/Packages/LSP-luau/script/service.lua:568: in method 'compileVM'
+	...oaming/Sublime Text/Packages/LSP-luau/script/service.lua:761: in function <...oaming/Sublime Text/Packages/LSP-luau/script/service.lua:761>
+	[C]: in function 'pcall'
+	...oaming/Sublime Text/Packages/LSP-luau/script/service.lua:761: in function <...oaming/Sublime Text/Packages/LSP-luau/script/service.lua:756>
+[2020-09-14 11:54:09.137][debug][script.service:598]: Compile VM[file:///c%3A/Users/alihs/AppData/Roaming/Sublime%20Text/Packages/LSP-luau/script/service.lua] takes: 0.204 sec
+[2020-09-14 11:54:13.086][debug][script.service:125]: clearDiagnostics	file:///c%3A/Users/alihs/AppData/Roaming/Sublime%20Text/Packages/LSP-luau/script/vm/value.lua
+[2020-09-14 11:54:18.242][debug][script.service:598]: Compile VM[file:///c%3A/Users/alihs/AppData/Roaming/Sublime%20Text/Packages/LSP-luau/script/core/completion.lua] takes: 0.251 sec
+[2020-09-14 11:54:18.741][debug][script.service:598]: Compile VM[file:///c%3A/Users/alihs/AppData/Roaming/Sublime%20Text/Packages/LSP-luau/script/core/diagnostics.lua] takes: 0.211 sec
+[2020-09-14 11:54:20.040][debug][script.service:598]: Compile VM[file:///c%3A/Users/alihs/AppData/Roaming/Sublime%20Text/Packages/LSP-luau/script/rbxapi.lua] takes: 0.297 sec
+[2020-09-14 11:54:22.129][warn][script.service:560]: Compile Ast[file:///c%3A/Users/alihs/AppData/Roaming/Sublime%20Text/Packages/LSP-luau/script/emmy/param.lua] takes [0.127] sec, size [1.237]kb
+[2020-09-14 11:54:49.117][info][script.method.shutdown:2]: Server shutdown.
+[2020-09-14 11:54:49.132][info][script.method.exit:2]: Server exited.
