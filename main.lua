@@ -5,7 +5,6 @@ local fs = require 'bee.filesystem'
 ROOT = fs.current_path() / rootPath
 LANG = LANG or 'en-US'
 
-output = require 'output'
 --collectgarbage('generational')
 collectgarbage("setpause", 100)
 collectgarbage("setstepmul", 1000)
@@ -16,7 +15,7 @@ log.info('Lua Lsp startup, root: ', ROOT)
 log.debug('ROOT:', ROOT:string())
 ac = {}
 
-xpcall(dofile, log.debug, rootPath .. '/debugger.lua')
+-- xpcall(dofile, log.debug, rootPath .. '/debugger.lua')
 require 'utility'
 local service = require 'service'
 local session = service()

@@ -1,16 +1,16 @@
-# LSP-luau
+# LSP-robloxlua
 
 Python support for Sublime's LSP plugin provided through [NightrainsRbx/RobloxLsp/server](https://github.com/NightrainsRbx/RobloxLsp). 
 
 ## Installation
 
 1. Install [LSP](https://packagecontrol.io/packages/LSP) and
-   [LSP-luau](https://packagecontrol.io/packages/LSP-luau) via Package Control.
+   [LSP-robloxlua](https://packagecontrol.io/packages/LSP-robloxlua) via Package Control.
 1. Restart Sublime.
 
 ## Configuration
 
 There are some ways to configure the package and the language server.
 
-- From `Preferences > Package Settings > LSP > Servers > LSP-luau`
-- From the command palette `Preferences: LSP-luau Settings`
+- From `Preferences > Package Settings > LSP > Servers > LSP-robloxlua`
+- From the command palette `Preferences: LSP-robloxlua Settings`

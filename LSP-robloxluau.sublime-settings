@@ -1,11 +1,18 @@
 {
+    // possible values: en-US, zh-CN
+    "locale": "en-US",
     "command": [
-        "${packages}/LSP-luau/bin/${binplatform}/lua-language-server",
-        "${packages}/LSP-luau/main.lua"
+        "${packages}/LSP-robloxluau/bin/${binplatform}/lua-language-server",
+        "-E",
+        "-e",
+        "LANG=\"${locale}\"",
+        "${packages}/LSP-robloxluau/main.lua"
     ],
     "languages": [
         {
-            "languageId": "lua"
+            "languageId": "lua",
+            "scope": "source.luau",
+            "syntax": "${packages}/LSP-robloxluau/Luau.sublime-settings"
         }
     ],
     "settings": {
