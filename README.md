@@ -1,16 +1,13 @@
-# LSP-robloxlua
+# LSP-robloxluau
 
-Python support for Sublime's LSP plugin provided through [NightrainsRbx/RobloxLsp/server](https://github.com/NightrainsRbx/RobloxLsp). 
+This plugin bundles the language server binaries in the package. This is because there is no distribution platform for
+this language server.
 
-## Installation
+# Applicable Selectors
 
-1. Install [LSP](https://packagecontrol.io/packages/LSP) and
-   [LSP-robloxlua](https://packagecontrol.io/packages/LSP-robloxlua) via Package Control.
-1. Restart Sublime.
+This language operates on files with the `source.lua` base scope.
 
-## Configuration
+# Locale
 
-There are some ways to configure the package and the language server.
-
-- From `Preferences > Package Settings > LSP > Servers > LSP-robloxlua`
-- From the command palette `Preferences: LSP-robloxlua Settings`
+You can make this language server report documentation in English or Chinese. The default is English. To change it
+into Chinese, run the command `Preferences: LSP-robloxluau Settings` and change the `"locale"` key.

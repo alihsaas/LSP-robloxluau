@@ -1,0 +1,73 @@
+name: Build Draft Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      semver:
+        description: Semantic version to release
+        required: true
+
+jobs:
+  build:
+    runs-on: ubuntu-16.04
+    steps:
+
+      - name: Clone the RobloxLsp repository
+        uses: actions/checkout@v2
+        with:
+          repository: NightrainsRbx/RobloxLsp
+          path: roblox-lsp
+          submodules: recursive
+
+      - name: Clone the LSP-robloxluau repository
+        uses: actions/checkout@v2
+        with:
+          repository: alihsaas/LSP-robloxluau
+          path: LSP-robloxluau-source
+
+      - name: Create the release files
+        run: bash LSP-robloxluau-source/make.sh
+
+      - name: Create release
+        id: create-release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.event.inputs.semver }}
+          release_name: Release ${{ github.event.inputs.semver }}
+          draft: true
+          prerelease: false
+          body: |
+            This release contains the latest version of the RobloxLuau language server.
+            Sublime-Text-Version-Range: >=4070
+
+      - name: Upload Linux Release
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create-release.outputs.upload_url }}
+          asset_path: ./LSP-robloxluau_linux-x64.zip
+          asset_name: LSP-robloxluau_linux-x64.zip
+          asset_content_type: application/zip
+
+      - name: Upload macOS Release
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create-release.outputs.upload_url }}
+          asset_path: ./LSP-robloxluau_osx-x64.zip
+          asset_name: LSP-robloxluau_osx-x64.zip
+          asset_content_type: application/zip
+
+      - name: Upload Windows Release
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create-release.outputs.upload_url }}
+          asset_path: ./LSP-robloxluau_windows-x64.zip
+          asset_name: LSP-robloxluau_windows-x64.zip
+          asset_content_type: application/zip

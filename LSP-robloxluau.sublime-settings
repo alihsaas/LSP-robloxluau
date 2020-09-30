@@ -11,8 +11,7 @@
     "languages": [
         {
             "languageId": "lua",
-            "scope": "source.luau",
-            "syntax": "${packages}/LSP-robloxluau/Luau.sublime-settings"
+            "syntax": "${packages}/LSP-robloxluau/Roblox-Luau.sublime-syntax"
         }
     ],
     "settings": {
