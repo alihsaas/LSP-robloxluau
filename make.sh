@@ -14,6 +14,7 @@ function process
     cp -R "${VSCODE_LUA_DIR}/server/libs" "${OUT_DIR}/"
     cp -R "${VSCODE_LUA_DIR}/server/locale" "${OUT_DIR}/"
     cp -R "${VSCODE_LUA_DIR}/server/script" "${OUT_DIR}/"
+    cp -R "${VSCODE_LUA_DIR}/server/rbx" "${OUT_DIR}/"
     cp "${VSCODE_LUA_DIR}/server/main.lua" "${OUT_DIR}/"
     cp "${VSCODE_LUA_DIR}/server/platform.lua" "${OUT_DIR}/"
     cp "${LSP_LUA_SOURCE_DIR}/plugin.py" "${OUT_DIR}/"
