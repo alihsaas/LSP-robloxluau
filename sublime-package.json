@@ -21,95 +21,120 @@
                 "settings": {
                   "additionalProperties": false,
                   "properties": {
-                    "Lua.color.mode": {
+                    "robloxLsp.color.mode": {
                       "default": "Semantic",
                       "enum": [
                         "Grammar",
                         "Semantic"
                       ],
-                      "markdownDescription": "Color mode.",
+                      "markdownDescription": "%config.color.mode%",
                       "markdownEnumDescriptions": [
-                        "Grammar color.",
-                        "Semantic color. You may need to set `editor.semanticHighlighting.enabled` to `true` to take effect."
+                        "%config.color.mode.Grammar%",
+                        "%config.color.mode.Semantic%"
                       ],
+                      "scope": "resource",
                       "type": "string"
                     },
-                    "Lua.completion.autoRequire": {
-                      "default": true,
-                      "markdownDescription": "When the input looks like a file name, automatically `require` this file.",
+                    "robloxLsp.completion.callParenthesess": {
+                      "default": false,
+                      "markdownDescription": "%config.completion.callParenthesess%",
+                      "scope": "resource",
                       "type": "boolean"
                     },
-                    "Lua.completion.callSnippet": {
-                      "default": "Disable",
-                      "enum": [
-                        "Disable",
-                        "Both",
-                        "Replace"
-                      ],
-                      "markdownDescription": "Shows function call snippets.",
-                      "markdownEnumDescriptions": [
-                        "Only shows `function name`.",
-                        "Shows `function name` and `call snippet`.",
-                        "Only shows `call snippet.`"
-                      ],
-                      "type": "string"
-                    },
-                    "Lua.completion.displayContext": {
-                      "default": 6,
-                      "markdownDescription": "Previewing the relevant code snippet of the suggestion may help you understand the usage of the suggestion. The number set indicates the number of intercepted lines in the code fragment. If it is set to `0`, this feature can be disabled.",
+                    "robloxLsp.completion.displayContext": {
+                      "default": 0,
+                      "markdownDescription": "%config.completion.displayContext%",
+                      "scope": "resource",
                       "type": "integer"
                     },
-                    "Lua.completion.enable": {
+                    "robloxLsp.completion.enable": {
                       "default": true,
-                      "markdownDescription": "Enable completion.",
+                      "markdownDescription": "%config.completion.enable%",
+                      "scope": "resource",
                       "type": "boolean"
                     },
-                    "Lua.completion.keywordSnippet": {
+                    "robloxLsp.completion.keywordSnippet": {
                       "default": "Replace",
                       "enum": [
                         "Disable",
                         "Both",
                         "Replace"
                       ],
-                      "markdownDescription": "Shows keyword syntax snippets.",
+                      "markdownDescription": "%config.completion.keywordSnippet%",
                       "markdownEnumDescriptions": [
-                        "Only shows `keyword`.",
-                        "Shows `keyword` and `syntax snippet`.",
-                        "Only shows `syntax snippet`."
+                        "%config.completion.keywordSnippet.Disable%",
+                        "%config.completion.keywordSnippet.Both%",
+                        "%config.completion.keywordSnippet.Replace%"
                       ],
+                      "scope": "resource",
                       "type": "string"
                     },
-                    "Lua.completion.showParams": {
+                    "robloxLsp.completion.showParams": {
                       "default": true,
-                      "markdownDescription": "Display parameters in completion list. When the function has multiple definitions, they will be displayed separately.",
+                      "markdownDescription": "%config.completion.showParams%",
+                      "scope": "resource",
                       "type": "boolean"
                     },
-                    "Lua.completion.workspaceWord": {
-                      "default": true,
-                      "markdownDescription": "Shows words within the workspace.",
+                    "robloxLsp.completion.endAutocompletion": {
+                      "default": false,
+                      "markdownDescription": "%config.completion.endAutocompletion%",
+                      "scope": "resource",
                       "type": "boolean"
                     },
-                    "Lua.diagnostics.disable": {
+                    "robloxLsp.completion.workspaceWord": {
+                      "default": true,
+                      "markdownDescription": "%config.completion.workspaceWord%",
+                      "scope": "resource",
+                      "type": "boolean"
+                    },
+                    "robloxLsp.completion.deprecatedMembers": {
+                      "default": false,
+                      "markdownDescription": "%config.completion.deprecatedMembers%",
+                      "scope": "resource",
+                      "type": "boolean"
+                    },
+                    "robloxLsp.develop.debuggerPort": {
+                      "default": 11412,
+                      "markdownDescription": "%config.develop.debuggerPort%",
+                      "scope": "resource",
+                      "type": "integer"
+                    },
+                    "robloxLsp.develop.debuggerWait": {
+                      "default": false,
+                      "markdownDescription": "%config.develop.debuggerWait%",
+                      "scope": "resource",
+                      "type": "boolean"
+                    },
+                    "robloxLsp.develop.enable": {
+                      "default": false,
+                      "markdownDescription": "%config.develop.enable%",
+                      "scope": "resource",
+                      "type": "boolean"
+                    },
+                    "robloxLsp.diagnostics.disable": {
                       "items": {
                         "type": "string"
                       },
-                      "markdownDescription": "Disabled diagnostic (Use code in hover brackets).\n",
+                      "markdownDescription": "%config.diagnostics.disable%",
+                      "scope": "resource",
                       "type": "array"
                     },
-                    "Lua.diagnostics.enable": {
+                    "robloxLsp.diagnostics.enable": {
                       "default": true,
-                      "markdownDescription": "Enable diagnostics.",
+                      "markdownDescription": "%config.diagnostics.enable%",
+                      "scope": "resource",
                       "type": "boolean"
                     },
-                    "Lua.diagnostics.globals": {
+                    "robloxLsp.diagnostics.globals": {
                       "items": {
                         "type": "string"
                       },
-                      "markdownDescription": "Defined global variables.\n",
+                      "markdownDescription": "%config.diagnostics.globals%",
+                      "scope": "resource",
                       "type": "array"
                     },
-                    "Lua.diagnostics.neededFileStatus": {
-                      "markdownDescription": "If you want to check only opened files, choice Opened; else choice Any.\n",
+                    "robloxLsp.diagnostics.neededFileStatus": {
+                      "markdownDescription": "%config.diagnostics.neededFileStatus%",
                       "properties": {
                         "ambiguity-1": {
                           "default": "Any",
@@ -119,6 +144,7 @@
                             "Opened",
                             "None"
                           ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "circle-doc-class": {
@@ -129,26 +155,7 @@
                             "Opened",
                             "None"
                           ],
-                          "type": "string"
-                        },
-                        "close-non-object": {
-                          "default": "Any",
-                          "description": "%config.diagnostics.close-non-object%",
-                          "enum": [
-                            "Any",
-                            "Opened",
-                            "None"
-                          ],
-                          "type": "string"
-                        },
-                        "code-after-break": {
-                          "default": "Opened",
-                          "description": "%config.diagnostics.code-after-break%",
-                          "enum": [
-                            "Any",
-                            "Opened",
-                            "None"
-                          ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "count-down-loop": {
@@ -159,6 +166,7 @@
                             "Opened",
                             "None"
                           ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "deprecated": {
@@ -169,6 +177,7 @@
                             "Opened",
                             "None"
                           ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "doc-field-no-class": {
@@ -179,6 +188,7 @@
                             "Opened",
                             "None"
                           ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "duplicate-doc-class": {
@@ -189,6 +199,7 @@
                             "Opened",
                             "None"
                           ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "duplicate-doc-field": {
@@ -199,6 +210,7 @@
                             "Opened",
                             "None"
                           ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "duplicate-doc-param": {
@@ -209,6 +221,7 @@
                             "Opened",
                             "None"
                           ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "duplicate-index": {
@@ -219,6 +232,7 @@
                             "Opened",
                             "None"
                           ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "duplicate-set-field": {
@@ -229,6 +243,7 @@
                             "Opened",
                             "None"
                           ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "empty-block": {
@@ -239,6 +254,7 @@
                             "Opened",
                             "None"
                           ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "global-in-nil-env": {
@@ -249,6 +265,7 @@
                             "Opened",
                             "None"
                           ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "lowercase-global": {
@@ -259,6 +276,7 @@
                             "Opened",
                             "None"
                           ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "newfield-call": {
@@ -269,6 +287,7 @@
                             "Opened",
                             "None"
                           ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "newline-call": {
@@ -279,6 +298,7 @@
                             "Opened",
                             "None"
                           ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "no-implicit-any": {
@@ -289,6 +309,7 @@
                             "Opened",
                             "None"
                           ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "redefined-local": {
@@ -299,6 +320,7 @@
                             "Opened",
                             "None"
                           ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "redundant-parameter": {
@@ -309,6 +331,7 @@
                             "Opened",
                             "None"
                           ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "redundant-value": {
@@ -319,6 +342,7 @@
                             "Opened",
                             "None"
                           ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "trailing-space": {
@@ -329,6 +353,7 @@
                             "Opened",
                             "None"
                           ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "unbalanced-assignments": {
@@ -339,6 +364,7 @@
                             "Opened",
                             "None"
                           ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "undefined-doc-class": {
@@ -349,6 +375,7 @@
                             "Opened",
                             "None"
                           ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "undefined-doc-name": {
@@ -359,6 +386,18 @@
                             "Opened",
                             "None"
                           ],
+                          "scope": "resource",
+                          "type": "string"
+                        },
+                        "undefined-doc-module": {
+                          "default": "Any",
+                          "description": "%config.diagnostics.undefined-doc-module%",
+                          "enum": [
+                            "Any",
+                            "Opened",
+                            "None"
+                          ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "undefined-doc-param": {
@@ -369,6 +408,7 @@
                             "Opened",
                             "None"
                           ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "undefined-env-child": {
@@ -379,16 +419,7 @@
                             "Opened",
                             "None"
                           ],
-                          "type": "string"
-                        },
-                        "undefined-field": {
-                          "default": "Opened",
-                          "description": "%config.diagnostics.undefined-field%",
-                          "enum": [
-                            "Any",
-                            "Opened",
-                            "None"
-                          ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "undefined-global": {
@@ -399,6 +430,7 @@
                             "Opened",
                             "None"
                           ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "unknown-diag-code": {
@@ -409,6 +441,7 @@
                             "Opened",
                             "None"
                           ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "unused-function": {
@@ -419,16 +452,7 @@
                             "Opened",
                             "None"
                           ],
-                          "type": "string"
-                        },
-                        "unused-label": {
-                          "default": "Opened",
-                          "description": "%config.diagnostics.unused-label%",
-                          "enum": [
-                            "Any",
-                            "Opened",
-                            "None"
-                          ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "unused-local": {
@@ -439,6 +463,7 @@
                             "Opened",
                             "None"
                           ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "unused-vararg": {
@@ -449,14 +474,49 @@
                             "Opened",
                             "None"
                           ],
+                          "scope": "resource",
+                          "type": "string"
+                        },
+                        "invalid-class-name": {
+                          "default": "Any",
+                          "description": "%config.diagnostics.invalid-class-name%",
+                          "enum": [
+                            "Any",
+                            "Opened",
+                            "None"
+                          ],
+                          "scope": "resource",
+                          "type": "string"
+                        },
+                        "undefined-type": {
+                          "default": "Any",
+                          "description": "%config.diagnostics.undefined-type%",
+                          "enum": [
+                            "Any",
+                            "Opened",
+                            "None"
+                          ],
+                          "scope": "resource",
+                          "type": "string"
+                        },
+                        "redefined-type": {
+                          "default": "Any",
+                          "description": "%config.diagnostics.redefined-type%",
+                          "enum": [
+                            "Any",
+                            "Opened",
+                            "None"
+                          ],
+                          "scope": "resource",
                           "type": "string"
                         }
                       },
+                      "scope": "resource",
                       "title": "neededFileStatus",
                       "type": "object"
                     },
-                    "Lua.diagnostics.severity": {
-                      "markdownDescription": "Modified diagnostic severity.\n",
+                    "robloxLsp.diagnostics.severity": {
+                      "markdownDescription": "%config.diagnostics.severity%",
                       "properties": {
                         "ambiguity-1": {
                           "default": "Warning",
@@ -467,6 +527,7 @@
                             "Information",
                             "Hint"
                           ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "circle-doc-class": {
@@ -478,28 +539,7 @@
                             "Information",
                             "Hint"
                           ],
-                          "type": "string"
-                        },
-                        "close-non-object": {
-                          "default": "Warning",
-                          "description": "%config.diagnostics.close-non-object%",
-                          "enum": [
-                            "Error",
-                            "Warning",
-                            "Information",
-                            "Hint"
-                          ],
-                          "type": "string"
-                        },
-                        "code-after-break": {
-                          "default": "Hint",
-                          "description": "%config.diagnostics.code-after-break%",
-                          "enum": [
-                            "Error",
-                            "Warning",
-                            "Information",
-                            "Hint"
-                          ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "count-down-loop": {
@@ -511,10 +551,11 @@
                             "Information",
                             "Hint"
                           ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "deprecated": {
-                          "default": "Warning",
+                          "default": "Hint",
                           "description": "%config.diagnostics.deprecated%",
                           "enum": [
                             "Error",
@@ -522,6 +563,7 @@
                             "Information",
                             "Hint"
                           ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "doc-field-no-class": {
@@ -533,6 +575,7 @@
                             "Information",
                             "Hint"
                           ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "duplicate-doc-class": {
@@ -544,6 +587,7 @@
                             "Information",
                             "Hint"
                           ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "duplicate-doc-field": {
@@ -555,6 +599,7 @@
                             "Information",
                             "Hint"
                           ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "duplicate-doc-param": {
@@ -566,6 +611,7 @@
                             "Information",
                             "Hint"
                           ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "duplicate-index": {
@@ -577,6 +623,7 @@
                             "Information",
                             "Hint"
                           ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "duplicate-set-field": {
@@ -588,6 +635,7 @@
                             "Information",
                             "Hint"
                           ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "empty-block": {
@@ -599,6 +647,7 @@
                             "Information",
                             "Hint"
                           ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "global-in-nil-env": {
@@ -610,6 +659,7 @@
                             "Information",
                             "Hint"
                           ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "lowercase-global": {
@@ -621,6 +671,7 @@
                             "Information",
                             "Hint"
                           ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "newfield-call": {
@@ -632,6 +683,7 @@
                             "Information",
                             "Hint"
                           ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "newline-call": {
@@ -643,6 +695,7 @@
                             "Information",
                             "Hint"
                           ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "no-implicit-any": {
@@ -654,6 +707,7 @@
                             "Information",
                             "Hint"
                           ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "redefined-local": {
@@ -665,6 +719,7 @@
                             "Information",
                             "Hint"
                           ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "redundant-parameter": {
@@ -676,6 +731,7 @@
                             "Information",
                             "Hint"
                           ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "redundant-value": {
@@ -687,6 +743,7 @@
                             "Information",
                             "Hint"
                           ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "trailing-space": {
@@ -698,6 +755,7 @@
                             "Information",
                             "Hint"
                           ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "unbalanced-assignments": {
@@ -709,6 +767,7 @@
                             "Information",
                             "Hint"
                           ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "undefined-doc-class": {
@@ -720,6 +779,7 @@
                             "Information",
                             "Hint"
                           ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "undefined-doc-name": {
@@ -731,6 +791,19 @@
                             "Information",
                             "Hint"
                           ],
+                          "scope": "resource",
+                          "type": "string"
+                        },
+                        "undefined-doc-module": {
+                          "default": "Warning",
+                          "description": "%config.diagnostics.undefined-doc-module%",
+                          "enum": [
+                            "Error",
+                            "Warning",
+                            "Information",
+                            "Hint"
+                          ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "undefined-doc-param": {
@@ -742,6 +815,7 @@
                             "Information",
                             "Hint"
                           ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "undefined-env-child": {
@@ -753,6 +827,7 @@
                             "Information",
                             "Hint"
                           ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "undefined-field": {
@@ -764,6 +839,7 @@
                             "Information",
                             "Hint"
                           ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "undefined-global": {
@@ -775,6 +851,7 @@
                             "Information",
                             "Hint"
                           ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "unknown-diag-code": {
@@ -786,6 +863,7 @@
                             "Information",
                             "Hint"
                           ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "unused-function": {
@@ -797,17 +875,7 @@
                             "Information",
                             "Hint"
                           ],
-                          "type": "string"
-                        },
-                        "unused-label": {
-                          "default": "Hint",
-                          "description": "%config.diagnostics.unused-label%",
-                          "enum": [
-                            "Error",
-                            "Warning",
-                            "Information",
-                            "Hint"
-                          ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "unused-local": {
@@ -819,6 +887,7 @@
                             "Information",
                             "Hint"
                           ],
+                          "scope": "resource",
                           "type": "string"
                         },
                         "unused-vararg": {
@@ -830,259 +899,153 @@
                             "Information",
                             "Hint"
                           ],
+                          "scope": "resource",
+                          "type": "string"
+                        },
+                        "invalid-class-name": {
+                          "default": "Warning",
+                          "description": "%config.diagnostics.invalid-class-name%",
+                          "enum": [
+                            "Error",
+                            "Warning",
+                            "Information",
+                            "Hint"
+                          ],
+                          "scope": "resource",
+                          "type": "string"
+                        },
+                        "undefined-type": {
+                          "default": "Warning",
+                          "description": "%config.diagnostics.undefined-type%",
+                          "enum": [
+                            "Error",
+                            "Warning",
+                            "Information",
+                            "Hint"
+                          ],
+                          "scope": "resource",
+                          "type": "string"
+                        },
+                        "redefined-type": {
+                          "default": "Warning",
+                          "description": "%config.diagnostics.redefined-type%",
+                          "enum": [
+                            "Error",
+                            "Warning",
+                            "Information",
+                            "Hint"
+                          ],
+                          "scope": "resource",
                           "type": "string"
                         }
                       },
+                      "scope": "resource",
                       "title": "severity",
                       "type": "object"
                     },
-                    "Lua.diagnostics.workspaceDelay": {
+                    "robloxLsp.diagnostics.workspaceDelay": {
                       "default": 0,
-                      "markdownDescription": "Latency (milliseconds) for workspace diagnostics. When you start the workspace, or edit any file, the entire workspace will be re-diagnosed in the background. Set to negative to disable workspace diagnostics.",
+                      "markdownDescription": "%config.diagnostics.workspaceDelay%",
+                      "scope": "resource",
                       "type": "integer"
                     },
-                    "Lua.diagnostics.workspaceRate": {
+                    "robloxLsp.diagnostics.workspaceRate": {
                       "default": 100,
-                      "markdownDescription": "Workspace diagnostics run rate (%). Decreasing this value reduces CPU usage, but also reduces the speed of workspace diagnostics. The diagnosis of the file you are currently editing is always done at full speed and is not affected by this setting.",
+                      "markdownDescription": "%config.diagnostics.workspaceRate%",
+                      "scope": "resource",
                       "type": "integer"
                     },
-                    "Lua.hint.enable": {
+                    "robloxLsp.hint.enable": {
                       "default": false,
-                      "markdownDescription": "Enabel hint.",
+                      "markdownDescription": "%config.hint.enable%",
+                      "scope": "resource",
                       "type": "boolean"
                     },
-                    "Lua.hint.paramName": {
-                      "default": true,
-                      "markdownDescription": "Hint parameter name when the parameter called is literal.",
-                      "type": "boolean"
-                    },
-                    "Lua.hint.paramType": {
-                      "default": true,
-                      "markdownDescription": "Show type hints at the parameter of the function.",
-                      "type": "boolean"
-                    },
-                    "Lua.hint.setType": {
+                    "robloxLsp.hint.paramName": {
                       "default": false,
-                      "markdownDescription": "Hint type at assignment operation.",
+                      "markdownDescription": "%config.hint.paramName%",
+                      "scope": "resource",
                       "type": "boolean"
                     },
-                    "Lua.hover.enable": {
+                    "robloxLsp.hint.paramType": {
                       "default": true,
-                      "markdownDescription": "Enable hover.",
+                      "markdownDescription": "%config.hint.paramType%",
+                      "scope": "resource",
                       "type": "boolean"
                     },
-                    "Lua.hover.enumsLimit": {
+                    "robloxLsp.hint.setType": {
+                      "default": false,
+                      "markdownDescription": "%config.hint.setType%",
+                      "scope": "resource",
+                      "type": "boolean"
+                    },
+                    "robloxLsp.hint.variableType": {
+                      "default": true,
+                      "markdownDescription": "%config.hint.variableType%",
+                      "scope": "resource",
+                      "type": "boolean"
+                    },
+                    "robloxLsp.hint.returnType": {
+                      "default": false,
+                      "markdownDescription": "%config.hint.returnType%",
+                      "scope": "resource",
+                      "type": "boolean"
+                    },
+                    "robloxLsp.hover.enable": {
+                      "default": true,
+                      "markdownDescription": "%config.hover.enable%",
+                      "scope": "resource",
+                      "type": "boolean"
+                    },
+                    "robloxLsp.hover.enumsLimit": {
                       "default": 5,
-                      "markdownDescription": "When the value corresponds to multiple types, limit the number of types displaying.",
+                      "markdownDescription": "%config.hover.enumsLimit%",
+                      "scope": "resource",
                       "type": "integer"
                     },
-                    "Lua.hover.previewFields": {
-                      "default": 20,
-                      "markdownDescription": "When hovering to view a table, limits the maximum number of previews for fields.",
+                    "robloxLsp.hover.fieldInfer": {
+                      "default": 3000,
+                      "markdownDescription": "%config.hover.fieldInfer%",
+                      "scope": "resource",
                       "type": "integer"
                     },
-                    "Lua.hover.viewNumber": {
+                    "robloxLsp.hover.previewFields": {
+                      "default": 100,
+                      "markdownDescription": "%config.hover.previewFields%",
+                      "scope": "resource",
+                      "type": "integer"
+                    },
+                    "robloxLsp.hover.viewNumber": {
                       "default": true,
-                      "markdownDescription": "Hover to view numeric content (only if literal is not decimal).",
+                      "markdownDescription": "%config.hover.viewNumber%",
+                      "scope": "resource",
                       "type": "boolean"
                     },
-                    "Lua.hover.viewString": {
+                    "robloxLsp.hover.viewString": {
                       "default": true,
-                      "markdownDescription": "Hover to view the contents of a string (only if the literal contains an escape character).",
+                      "markdownDescription": "%config.hover.viewString%",
+                      "scope": "resource",
                       "type": "boolean"
                     },
-                    "Lua.hover.viewStringMax": {
+                    "robloxLsp.hover.viewStringMax": {
                       "default": 1000,
-                      "markdownDescription": "The maximum length of a hover to view the contents of a string.",
+                      "markdownDescription": "%config.hover.viewStringMax%",
+                      "scope": "resource",
                       "type": "integer"
                     },
-                    "Lua.runtime.builtin": {
-                      "markdownDescription": "Adjust the enabled state of the built-in library. You can disable (or redefine) the non-existent library according to the actual runtime environment.\n\n* `default`: Indicates that the library will be enabled or disabled according to the runtime version\n* `enable`: always enable\n* `disable`: always disable\n",
-                      "properties": {
-                        "basic": {
-                          "default": "default",
-                          "description": "%config.runtime.builtin.basic%",
-                          "enum": [
-                            "default",
-                            "enable",
-                            "disable"
-                          ],
-                          "type": "string"
-                        },
-                        "bit": {
-                          "default": "default",
-                          "description": "%config.runtime.builtin.bit%",
-                          "enum": [
-                            "default",
-                            "enable",
-                            "disable"
-                          ],
-                          "type": "string"
-                        },
-                        "bit32": {
-                          "default": "default",
-                          "description": "%config.runtime.builtin.bit32%",
-                          "enum": [
-                            "default",
-                            "enable",
-                            "disable"
-                          ],
-                          "type": "string"
-                        },
-                        "builtin": {
-                          "default": "default",
-                          "description": "%config.runtime.builtin.builtin%",
-                          "enum": [
-                            "default",
-                            "enable",
-                            "disable"
-                          ],
-                          "type": "string"
-                        },
-                        "coroutine": {
-                          "default": "default",
-                          "description": "%config.runtime.builtin.coroutine%",
-                          "enum": [
-                            "default",
-                            "enable",
-                            "disable"
-                          ],
-                          "type": "string"
-                        },
-                        "debug": {
-                          "default": "default",
-                          "description": "%config.runtime.builtin.debug%",
-                          "enum": [
-                            "default",
-                            "enable",
-                            "disable"
-                          ],
-                          "type": "string"
-                        },
-                        "ffi": {
-                          "default": "default",
-                          "description": "%config.runtime.builtin.ffi%",
-                          "enum": [
-                            "default",
-                            "enable",
-                            "disable"
-                          ],
-                          "type": "string"
-                        },
-                        "io": {
-                          "default": "default",
-                          "description": "%config.runtime.builtin.io%",
-                          "enum": [
-                            "default",
-                            "enable",
-                            "disable"
-                          ],
-                          "type": "string"
-                        },
-                        "jit": {
-                          "default": "default",
-                          "description": "%config.runtime.builtin.jit%",
-                          "enum": [
-                            "default",
-                            "enable",
-                            "disable"
-                          ],
-                          "type": "string"
-                        },
-                        "math": {
-                          "default": "default",
-                          "description": "%config.runtime.builtin.math%",
-                          "enum": [
-                            "default",
-                            "enable",
-                            "disable"
-                          ],
-                          "type": "string"
-                        },
-                        "os": {
-                          "default": "default",
-                          "description": "%config.runtime.builtin.os%",
-                          "enum": [
-                            "default",
-                            "enable",
-                            "disable"
-                          ],
-                          "type": "string"
-                        },
-                        "package": {
-                          "default": "default",
-                          "description": "%config.runtime.builtin.package%",
-                          "enum": [
-                            "default",
-                            "enable",
-                            "disable"
-                          ],
-                          "type": "string"
-                        },
-                        "string": {
-                          "default": "default",
-                          "description": "%config.runtime.builtin.string%",
-                          "enum": [
-                            "default",
-                            "enable",
-                            "disable"
-                          ],
-                          "type": "string"
-                        },
-                        "table": {
-                          "default": "default",
-                          "description": "%config.runtime.builtin.table%",
-                          "enum": [
-                            "default",
-                            "enable",
-                            "disable"
-                          ],
-                          "type": "string"
-                        },
-                        "utf8": {
-                          "default": "default",
-                          "description": "%config.runtime.builtin.utf8%",
-                          "enum": [
-                            "default",
-                            "enable",
-                            "disable"
-                          ],
-                          "type": "string"
-                        }
-                      },
-                      "type": "object"
+                    "robloxLsp.intelliSense.searchDepth": {
+                      "default": 0,
+                      "markdownDescription": "%config.intelliSense.searchDepth%",
+                      "scope": "resource",
+                      "type": "integer"
                     },
-                    "Lua.runtime.fileEncoding": {
-                      "default": "utf8",
-                      "enum": [
-                        "utf8",
-                        "ansi"
-                      ],
-                      "markdownDescription": "File encoding. The `ansi` option is only available under the `Windows` platform.",
+                    "robloxLsp.misc.parameters": {
+                      "default": "",
+                      "markdownDescription": "%config.misc.parameters%",
+                      "scope": "resource",
                       "type": "string"
                     },
-                    "Lua.runtime.nonstandardSymbol": {
-                      "items": {
-                        "enum": [
-                          "//",
-                          "/**/",
-                          "`",
-                          "+=",
-                          "-=",
-                          "*=",
-                          "/=",
-                          "||",
-                          "&&",
-                          "!",
-                          "!=",
-                          "continue"
-                        ],
-                        "type": "string"
-                      },
-                      "markdownDescription": "Supports non-standard symbols. Make sure that your runtime environment supports these symbols.",
-                      "type": "array"
-                    },
-                    "Lua.runtime.path": {
+                    "robloxLsp.runtime.path": {
                       "default": [
                         "?.lua",
                         "?/init.lua",
@@ -1091,114 +1054,191 @@
                       "items": {
                         "type": "string"
                       },
-                      "markdownDescription": "`package.path`",
+                      "markdownDescription": "%config.runtime.path%",
+                      "scope": "resource",
                       "type": "array"
                     },
-                    "Lua.runtime.plugin": {
-                      "default": "",
-                      "markdownDescription": "Plugin path. Please read [wiki](https://github.com/sumneko/lua-language-server/wiki/Plugin) to learn more.",
+                    "robloxLsp.runtime.plugin": {
+                      "default": ".vscode/lua/plugin.lua",
+                      "markdownDescription": "%config.runtime.plugin%",
+                      "scope": "resource",
                       "type": "string"
                     },
-                    "Lua.runtime.special": {
-                      "markdownDescription": "The custom global variables are regarded as some special built-in variables, and the language server will provide special support\nThe following example shows that 'include' is treated as' require '.\n```json\n\"Lua.runtime.special\" : {\n    \"include\" : \"require\"\n}\n```\n",
-                      "patternProperties": {
-                        ".*": {
-                          "default": "require",
-                          "enum": [
-                            "_G",
-                            "rawset",
-                            "rawget",
-                            "setmetatable",
-                            "require",
-                            "dofile",
-                            "loadfile",
-                            "pcall",
-                            "xpcall"
-                          ],
-                          "scope": "resource",
-                          "type": "string"
-                        }
-                      },
-                      "type": "object"
-                    },
-                    "Lua.runtime.unicodeName": {
-                      "default": false,
-                      "markdownDescription": "Allows Unicode characters in name.",
-                      "type": "boolean"
-                    },
-                    "Lua.runtime.version": {
-                      "default": "Lua 5.4",
-                      "enum": [
-                        "Lua 5.1",
-                        "Lua 5.2",
-                        "Lua 5.3",
-                        "Lua 5.4",
-                        "LuaJIT"
-                      ],
-                      "markdownDescription": "Lua runtime version.",
-                      "type": "string"
-                    },
-                    "Lua.signatureHelp.enable": {
+                    "robloxLsp.signatureHelp.enable": {
                       "default": true,
-                      "markdownDescription": "Enable signature help.",
+                      "markdownDescription": "%config.signatureHelp.enable%",
+                      "scope": "resource",
                       "type": "boolean"
                     },
-                    "Lua.telemetry.enable": {
-                      "default": null,
-                      "markdownDescription": "Enable telemetry to send your editor information and error logs over the network. Read our privacy policy [here](https://github.com/sumneko/lua-language-server/wiki/Privacy-Policy).\n",
-                      "type": [
-                        "boolean",
-                        "null"
-                      ]
-                    },
-                    "Lua.window.progressBar": {
+                    "robloxLsp.signatureHelp.documentation": {
                       "default": true,
-                      "markdownDescription": "Show progress bar in status bar.",
+                      "markdownDescription": "%config.signatureHelp.documentation%",
+                      "scope": "resource",
                       "type": "boolean"
                     },
-                    "Lua.workspace.ignoreDir": {
+                    "robloxLsp.window.progressBar": {
+                      "default": true,
+                      "markdownDescription": "%config.window.progressBar%",
+                      "scope": "resource",
+                      "type": "boolean"
+                    },
+                    "robloxLsp.window.statusBar": {
+                      "default": true,
+                      "markdownDescription": "%config.window.statusBar%",
+                      "scope": "resource",
+                      "type": "boolean"
+                    },
+                    "robloxLsp.workspace.ignoreDir": {
                       "default": [
                         ".vscode"
                       ],
                       "items": {
                         "type": "string"
                       },
-                      "markdownDescription": "Ignored files and directories (Use `.gitignore` grammar).\n",
+                      "markdownDescription": "%config.workspace.ignoreDir%",
+                      "scope": "resource",
                       "type": "array"
                     },
-                    "Lua.workspace.ignoreSubmodules": {
+                    "robloxLsp.workspace.ignoreSubmodules": {
                       "default": true,
-                      "markdownDescription": "Ignore submodules.",
+                      "markdownDescription": "%config.workspace.ignoreSubmodules%",
+                      "scope": "resource",
                       "type": "boolean"
                     },
-                    "Lua.workspace.library": {
+                    "robloxLsp.workspace.rojoProjectFile": {
+                      "default": "default",
+                      "markdownDescription": "%config.workspace.rojoProjectFile%",
+                      "scope": "resource",
+                      "type": "string"
+                    },
+                    "robloxLsp.workspace.loadMode": {
+                      "default": "All Files",
+                      "enum": [
+                        "All Files",
+                        "Rojo Project"
+                      ],
+                      "markdownDescription": "%config.workspace.loadMode%",
+                      "markdownEnumDescriptions": [
+                        "%config.workspace.loadMode.allFiles%",
+                        "%config.workspace.loadMode.rojoProject%"
+                      ],
+                      "scope": "resource",
+                      "type": "string"
+                    },
+                    "robloxLsp.workspace.library": {
                       "items": {
                         "type": "string"
                       },
-                      "markdownDescription": "The directory path of the external function library.\nThe language service will additionally load the lua files in these directories, even if they are not in the current workspace, for definition, completion and other features.\n",
+                      "markdownDescription": "%config.workspace.library%",
+                      "scope": "resource",
                       "type": "array"
                     },
-                    "Lua.workspace.maxPreload": {
+                    "robloxLsp.workspace.maxPreload": {
                       "default": 1000,
-                      "markdownDescription": "Max preloaded files.",
+                      "markdownDescription": "%config.workspace.maxPreload%",
+                      "scope": "resource",
                       "type": "integer"
                     },
-                    "Lua.workspace.preloadFileSize": {
+                    "robloxLsp.workspace.preloadFileSize": {
                       "default": 100,
-                      "markdownDescription": "Skip files larger than this value (KB) when preloading.",
+                      "markdownDescription": "%config.workspace.preloadFileSize%",
+                      "scope": "resource",
                       "type": "integer"
                     },
-                    "Lua.workspace.useGitIgnore": {
+                    "robloxLsp.workspace.useGitIgnore": {
                       "default": true,
-                      "markdownDescription": "Ignore files list in `.gitignore` .",
+                      "markdownDescription": "%config.workspace.useGitIgnore%",
+                      "scope": "resource",
                       "type": "boolean"
                     },
-                    "Lua.workspace.userThirdParty": {
-                      "items": {
-                        "type": "string"
+                    "robloxLsp.runtime.fileEncoding": {
+                      "default": "utf8",
+                      "enum": [
+                        "utf8",
+                        "ansi"
+                      ],
+                      "markdownDescription": "%config.runtime.fileEncoding%",
+                      "scope": "resource",
+                      "type": "string"
+                    },
+                    "robloxLsp.misc.serviceAutoImport": {
+                      "default": true,
+                      "markdownDescription": "%config.misc.serviceAutoImport%",
+                      "scope": "resource",
+                      "type": "boolean"
+                    },
+                    "robloxLsp.misc.color3Picker": {
+                      "default": true,
+                      "markdownDescription": "%config.misc.color3Picker%",
+                      "scope": "resource",
+                      "type": "boolean"
+                    },
+                    "robloxLsp.misc.goToScriptLink": {
+                      "default": true,
+                      "markdownDescription": "%config.misc.goToScriptLink%",
+                      "scope": "resource",
+                      "type": "boolean"
+                    },
+                    "robloxLsp.misc.serverPort": {
+                      "default": 27843,
+                      "markdownDescription": "%config.misc.serverPort%",
+                      "scope": "resource",
+                      "type": "integer",
+                      "minimum": 0,
+                      "maximum": 65535
+                    },
+                    "robloxLsp.typeChecking.mode": {
+                      "default": "Disabled",
+                      "enum": [
+                        "Disabled",
+                        "Non Strict",
+                        "Strict"
+                      ],
+                      "markdownDescription": "%config.typeChecking.mode%",
+                      "markdownEnumDescriptions": [
+                        "%config.typeChecking.mode.disabled%",
+                        "%config.typeChecking.mode.nonStrict%",
+                        "%config.typeChecking.mode.strict%"
+                      ],
+                      "scope": "resource",
+                      "type": "string"
+                    },
+                    "robloxLsp.typeChecking.options": {
+                      "markdownDescription": "%config.typeChecking.options%",
+                      "properties": {
+                        "union-bivariance": {
+                          "default": false,
+                          "description": "%config.typeChecking.options.union-bivariance%",
+                          "scope": "resource",
+                          "type": "boolean"
+                        },
+                        "ignore-extra-fields": {
+                          "default": false,
+                          "description": "%config.typeChecking.options.ignore-extra-fields%",
+                          "scope": "resource",
+                          "type": "boolean"
+                        },
+                        "infer-instance-from-unknown": {
+                          "default": false,
+                          "description": "%config.typeChecking.options.infer-instance-from-unknown%",
+                          "scope": "resource",
+                          "type": "boolean"
+                        },
+                        "recursive-get-type": {
+                          "default": false,
+                          "description": "%config.typeChecking.options.recursive-get-type%",
+                          "scope": "resource",
+                          "type": "boolean"
+                        }
                       },
-                      "markdownDescription": "Add private third-party library configuration file paths here, please refer to the built-in [configuration file path](https://github.com/sumneko/lua-language-server/tree/master/meta/3rd)",
-                      "type": "array"
+                      "scope": "resource",
+                      "type": "object"
+                    },
+                    "robloxLsp.typeChecking.showFullType": {
+                      "default": false,
+                      "markdownDescription": "%config.typeChecking.showFullType%",
+                      "scope": "resource",
+                      "type": "boolean"
                     }
                   }
                 }
@@ -1217,8 +1257,8 @@
               "properties": {
                 "LSP": {
                   "properties": {
-                    "LSP-lua": {
-                      "$ref": "sublime://settings/LSP-lua#/definitions/PluginConfig"
+                    "LSP-robloxluau": {
+                      "$ref": "sublime://settings/LSP-robloxluau#/definitions/PluginConfig"
                     }
                   }
                 }
